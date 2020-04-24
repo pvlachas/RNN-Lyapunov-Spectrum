@@ -2,6 +2,7 @@
 
 This project contains minimal implementation of the RNN architecture trained with Backpropagation through time (BPTT) to calculate the Lyapunov Spectrum from time-series data of a dynamical system. A GRU cell is utilized.
 
+
 ## REQUIREMENTS
 
 The code requirements are:
@@ -24,9 +25,11 @@ pip3 install torch matplotlib scipy psutil tqdm
 The code is ready to run.
 In the following you can test the code on the identification of the Lyapunov exponents of the three dimensional Lorenz system.
 
+
 ## DATASETS
 
 The data to run a small demo are provided in the local ./Data folder
+
 
 ## DEMO
 
@@ -44,7 +47,8 @@ bash 1_CALCULATE_LYAPUNON_SPECTRUM.sh
 At the terminal output, you can observe the progress of the LE calculation.
 The iterative_prediction_length determining the length of the trajectory utilized to identify the LE, needs to be large in order to have an accurate estimation of the spectrum.
 The code generates a plot of the calculated spectrum in the /Results folder, and print the estimated values at the terminal output.
-In the Lorenz case, we get an estimate of 0.9080213, which is really close to the true one (approximately 0.9056).
+In the Lorenz case, we get an estimate of 0.90486652, which is really close to the groundtruth (approximately 0.9056).
+A more accurate estimate can be achieved by averaging over many trajectories, training a larger RNN model (make sure that it does not overfit though!) or using a longer iterative_prediction_length.
 
 
 ## Note
@@ -52,7 +56,9 @@ In the Lorenz case, we get an estimate of 0.9080213, which is really close to th
 This is only a minimal version of the code under development in the CSE-lab.
 Please contact pvlachas@ethz.ch if you want to get informed, take a look at the latest version, with more features, models and capabilities.
 
+
 ### Relevant Publications
+
 [1] P.R. Vlachas, J. Pathak, B.R. Hunt et al., *Backpropagation algorithms and
 Reservoir Computing in Recurrent Neural Networks for the forecasting of complex spatiotemporal
 dynamics.* Neural Networks (2020), doi: https://doi.org/10.1016/j.neunet.2020.02.016.
