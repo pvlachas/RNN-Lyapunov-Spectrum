@@ -3,7 +3,7 @@
 This project contains minimal implementation of the RNN architecture trained with Backpropagation through time (BPTT) to calculate the Lyapunov Spectrum from time-series data of a dynamical system. A GRU cell is utilized.
 
 
-## REQUIREMENTS
+## Requirements
 
 The code requirements are:
 - python 3.7.3
@@ -26,12 +26,12 @@ The code is ready to run.
 In the following you can test the code on the identification of the Lyapunov exponents of the three dimensional Lorenz system.
 
 
-## DATASETS
+## Datasets
 
 The data to run a small demo are provided in the local ./Data folder
 
 
-## DEMO
+## Demo
 
 In order to run the demo in a local cluster, you can navigate to the Experiments folder, and select your desired application, e.g. Lorenz3D. First, a statefull GRU-RNN is trained by running the script 0_TRAIN_RNN.sh:
 ```
@@ -57,7 +57,7 @@ This is only a minimal version of the code under development in the CSE-lab.
 Please contact pvlachas@ethz.ch if you want to get informed, take a look at the latest version, with more features, models and capabilities.
 
 
-### Relevant Publications
+## Relevant Publications
 
 [1] P.R. Vlachas, J. Pathak, B.R. Hunt et al., *Backpropagation algorithms and
 Reservoir Computing in Recurrent Neural Networks for the forecasting of complex spatiotemporal
