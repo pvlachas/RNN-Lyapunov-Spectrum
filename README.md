@@ -56,6 +56,15 @@ A more accurate estimate can be achieved by averaging over many trajectories, tr
 This is only a minimal version of the code under development in the CSE-lab.
 Please contact pvlachas@ethz.ch if you want to get informed, take a look at the latest version, with more features, models and capabilities.
 
+## Acknowledgments
+
+This is joint work with:
+- Jaideep Pathak ([website](http://physics.umd.edu/~jpathak/), [scholar](https://scholar.google.com/citations?user=cevw0gkAAAAJ&hl=en)) 
+- Brian R. Hunt ([website](http://www.math.umd.edu/~bhunt/), [scholar](https://scholar.google.com/citations?user=ten7UlMAAAAJ&hl=en))
+- Themis Sapsis ([website](http://sandlab.mit.edu/), [scholar](https://scholar.google.com/citations?user=QSPXIAQAAAAJ&hl=en))
+- Michelle Girvan ([website](https://sites.google.com/umd.edu/networks/home), [scholar](https://scholar.google.com/citations?user=npKBI-oAAAAJ&hl=el)) 
+- Edward Ott ([website](https://umdphysics.umd.edu/people/faculty/current/item/380-edott.html), [scholar](https://scholar.google.com/citations?user=z7boxkkAAAAJ&hl=en))
+- Petros Koumoutsakos ([website](https://www.cse-lab.ethz.ch/member/petros-koumoutsakos/), [scholar](https://scholar.google.ch/citations?user=IaDP3mkAAAAJ&hl=el&oi=ao)) 
 
 ## Relevant Publications
 
@@ -68,8 +77,3 @@ Physical Review Letters 120 (2), 024102, 2018
 
 [3] *Data-driven forecasting of high-dimensional chaotic systems with long short-term memory networks*, Pantelis R. Vlachas, Wonmin Byeon, Zhong Y. Wan, Themistoklis P. Sapsis and Petros Koumoutsakos
 Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences 474 (2213), 2018
-   
-
-
-
-
