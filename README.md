@@ -1,6 +1,6 @@
 # RNN-Lyapunov-Spectrum
 
-This project contains minimal implementation of the RNN architecture trained with Backpropagation through time (BPTT) to calculate the Lyapunov Spectrum from time-series data of a dynamical system. A GRU cell is utilized.
+This project contains a minimal implementation of an RNN architecture trained with Backpropagation through time (BPTT) to calculate the Lyapunov Spectrum from time-series data of a dynamical system. A Gated Recurrent Unit (GRU) cell is utilized.
 
 
 ## Requirements
