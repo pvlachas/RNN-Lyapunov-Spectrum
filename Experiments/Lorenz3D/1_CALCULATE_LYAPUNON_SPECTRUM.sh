@@ -33,4 +33,6 @@ python3 RUN.py rnn \
 --iterative_prediction_length 20000 \
 --teacher_forcing_forecasting 1 \
 --iterative_state_forecasting 1 \
---num_lyaps 2
+--num_lyaps 3
+
+
