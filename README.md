@@ -52,7 +52,7 @@ In the Lorenz (3 dimensional system) case, we set the iterative prediction lengt
 Exponents are:
 [-1.4312247e+01 -4.3020570e-03  9.0752620e-01]
 ```
-Indeed, these exponents are very close to the groundtruth, i.e. `(−14.5723, 0, 0.9056)`.
+Indeed, these exponents are very close to the groundtruth, i.e. `(−14.5723, 0, 0.9056)` (see [reference](https://aip.scitation.org/doi/10.1063/1.4927643)).
 More accurate results can be attained by averaging over many trajectories, by increasing the iterative prediction length, or tuning the hyperparameters, or training a larger RNN model (make sure that it does not overfit though!).
 
 ## Note
