@@ -16,7 +16,7 @@ python3 -m venv venv-RNN-Lyapunov-Spectrum
 ```
 Then activate the virtual environment:
 ```
-source venv-RNN-Lyapunov-Spectrum/bin/activate
+source $HOME/venv-RNN-Lyapunov-Spectrum/bin/activate
 ```
 Install the required packages with:
 ```
