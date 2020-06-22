@@ -45,11 +45,15 @@ cd ./Experiments/Lorenz3D
 bash 1_CALCULATE_LYAPUNON_SPECTRUM.sh
 ```
 At the terminal output, you can observe the progress of the LE calculation.
+The code generates a plot of the calculated spectrum in the /Results folder, and prints the estimated values at the terminal output.
 The iterative_prediction_length determining the length of the trajectory utilized to identify the LE, needs to be large in order to have an accurate estimation of the spectrum.
-The code generates a plot of the calculated spectrum in the /Results folder, and print the estimated values at the terminal output.
-In the Lorenz case, we get an estimate of 0.90486652, which is really close to the groundtruth (approximately 0.9056).
-A more accurate estimate can be achieved by averaging over many trajectories, training a larger RNN model (make sure that it does not overfit though!) or using a longer iterative_prediction_length.
-
+In the Lorenz (3 dimensional system) case, we set the iterative prediction length to 20000 (the rest of hyperparameters can be found in the demo script) and we get the Lyapunov exponents:
+```
+Exponents are:
+[-1.4312247e+01 -4.3020570e-03  9.0752620e-01]
+```
+Indeed, these exponents are very close to the groundtruth, i.e. `(−14.5723, 0, 0.9056)`.
+More accurate results can be attained by averaging over many trajectories, by increasing the iterative prediction length, or tuning the hyperparameters, or training a larger RNN model (make sure that it does not overfit though!).
 
 ## Note
 
