@@ -56,10 +56,10 @@ Exponents are:
 Indeed, these exponents are very close to the groundtruth, i.e. `(−14.5723, 0, 0.9056)` (see [reference](https://aip.scitation.org/doi/10.1063/1.4927643)).
 More accurate results can be attained by averaging over many trajectories, by increasing the iterative prediction length, or tuning the hyperparameters, or training a larger RNN model (make sure that it does not overfit though!).
 
-## Questions
+## Contact info
 
 This code was developed in the CSE-lab.
-For questions please refer to pvlachas@ethz.ch.
+For questions or to get in contact please refer to pvlachas@ethz.ch.
 
 ## Acknowledgments
 
