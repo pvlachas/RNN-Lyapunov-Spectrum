@@ -58,7 +58,7 @@ More accurate results can be attained by averaging over many trajectories, by in
 
 ## Contact info
 
-This code was developed in the CSE-lab.
+This code was developed in the [CSE-lab](https://www.cse-lab.ethz.ch).
 For questions or to get in contact please refer to pvlachas@ethz.ch.
 
 ## Acknowledgments
