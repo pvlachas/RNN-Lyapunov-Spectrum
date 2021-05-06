@@ -21,7 +21,7 @@ def writeToLogFile(model, logfile, data, fields_to_write):
 	with io.open(logfile, 'a+') as f:
 		f.write("model_name:" + str(model.model_name))
 		for field in fields_to_write:
-			assert(field in data)
+			assert field in data , "field {:} not in data".format(field)
 			f.write(":{:}:{:}".format(field, data[field]))
 		f.write("\n")
 	return 0
@@ -252,14 +252,14 @@ def dbfft(x, fs):
 
 
 def getNumberOfAccuratePredictions(nerror, tresh=0.05):
-    nerror_bool = nerror < tresh
-    n_max = np.shape(nerror)[0]
-    n = 0
-    while nerror_bool[n] == True:
-        n += 1
-        if n == n_max: break
-    return n
-    
+	nerror_bool = nerror < tresh
+	n_max = np.shape(nerror)[0]
+	n = 0
+	while nerror_bool[n] == True:
+		n += 1
+		if n == n_max: break
+	return n
+	
 def getFirstDataDimension(var):
 	if isinstance(var, (list,)):
 		dim = len(var)

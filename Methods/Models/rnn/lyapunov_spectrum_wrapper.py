@@ -233,6 +233,7 @@ class lyapunov_spectrum_wrapper(nn.Module):
 		print("Number of warm-up steps={:}.".format(n_warmup))
 
 		N = np.shape(input_sequence)[0]
+
 		# PREDICTION LENGTH
 		if N - n_warmup != iterative_prediction_length: raise ValueError("Error! N ({:}) - self.n_warmup ({:}) != iterative_prediction_length ({:})".format(N, n_warmup, iterative_prediction_length))
 		# PREPARING THE HIDDEN STATES
@@ -350,7 +351,7 @@ class lyapunov_spectrum_wrapper(nn.Module):
 						"dt":dt,
 						"TT":TT,
 						}
-						data_path = self.results_dir + '/le_results_N{:}_ITER{:}.pickle'.format(iterative_prediction_length, ITER)
+						data_path = self.results_dir + '/le_results_N{:}_ITER{:}'.format(iterative_prediction_length, ITER)
 						saveDataPickle(results, data_path)
 
 			# GRADIENTS_PREV = GRADIENTS
@@ -393,7 +394,7 @@ class lyapunov_spectrum_wrapper(nn.Module):
 		"dt":dt,
 		"TT":TT,
 		}
-		data_path = self.results_dir + '/le_results_N{:}.pickle'.format(iterative_prediction_length)
+		data_path = self.results_dir + '/le_results_N{:}'.format(iterative_prediction_length)
 		saveDataPickle(results, data_path)
 
 

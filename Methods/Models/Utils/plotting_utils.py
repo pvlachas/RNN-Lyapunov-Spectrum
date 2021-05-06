@@ -442,7 +442,7 @@ def plotSpectrum(model, results, set_name, testing_mode=""):
 
 
 def plotLyapunovSpectrumResults(model):
-	data = loadDataPickle(model.getResultsDir() + '/le_results_N{:}.pickle'.format(model.iterative_prediction_length))
+	data = loadDataPickle(model.getResultsDir() + '/le_results_N{:}'.format(model.iterative_prediction_length))
 	num_lyaps = data["num_lyaps"]
 	exponents = data["exponents"]
 	output_sequence = data["output_sequence"]
