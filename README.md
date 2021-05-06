@@ -3,7 +3,7 @@
 This project contains an implementation of an RNN architecture trained with Backpropagation through time (BPTT) to calculate the Lyapunov Spectrum from time-series data of a dynamical system. A Gated Recurrent Unit (GRU) cell is utilized.
 
 
-## Requirements
+## Requirements (installation with venv)
 
 The code requirements are:
 - python 3.7.3
@@ -17,7 +17,7 @@ python3 -m venv venv-RNN-Lyapunov-Spectrum
 ```
 Then activate the virtual environment:
 ```
-source $HOME/venv-RNN-Lyapunov-Spectrum/bin/activate
+source ./venv-RNN-Lyapunov-Spectrum/bin/activate
 ```
 Install the required packages with:
 ```
@@ -26,6 +26,15 @@ pip3 install torch matplotlib scipy psutil tqdm
 The code is ready to run.
 In the following you can test the code on the identification of the Lyapunov exponents of the three dimensional Lorenz system.
 
+## Requirements (installation with virtualenv)
+
+The code to get the exact environment used in the paper is:
+```
+pip install virtualenv
+virtualenv venv-RNN-Lyapunov-Spectrum --python=python3.7.3
+source ./venv-RNN-Lyapunov-Spectrum/bin/activate
+pip3 install -r requirements.txt
+```
 
 ## Datasets
 
